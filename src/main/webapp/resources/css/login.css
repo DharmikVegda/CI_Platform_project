@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dot-button{
+    height: 10px !important; 
+    width: 10px !important;
+    border-radius: 50%; 
+}
+
+.login-form{
+    height: 95%;
+    padding-left: 30px;
+    padding-right: 30px;
+} 
+
+img{
+    max-height: 100vh;
+}
+
+#login-button{
+    border-color: #f88634;
+    color: #f88634;
+    width: 100%;
+}
+
+#login-button:hover{
+    color: white;
+    background-color: #f88634;
+}
+
+a{
+    font-size: 0.875rem;
+    text-decoration: none !important;
+}
+
+#lost-password-text{
+    font-size: 0.875rem;
+    color: #414141;
+}
+
+#create-account-text{
+    font-size: 0.875rem;
+    color: #2b64b1 ;
+    margin-left: 0.5rem;
+}
+
+#extra-text{
+    font-size: 0.875rem;
+    color: #414141;
+}
+
+.privacy-policy{
+    color: #414141;
+    font-size: 0.875rem;
+}

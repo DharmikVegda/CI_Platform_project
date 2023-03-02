@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dot-button{
+    height: 10px !important; 
+    width: 10px !important;
+    border-radius: 50%; 
+}
+
+img{
+    max-height: 100vh;
+}
+
+.registration-form{
+    height: 95%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#register-button{
+    border-color: #f88634;
+    color: #f88634;
+    font-size: 1.063rem;
+    width: 100%;
+}
+
+#register-button:hover{
+    color: white;
+    background-color: #f88634;
+}
+
+a{
+    font-size: 0.875rem;
+    text-decoration: none !important;
+}
+
+#lost-password-text{
+    font-size: 0.875rem;
+    color: #414141;
+}
+
+#already-register-text{
+    color: #414141;
+    font-size: 0.875rem;
+}
+
+.privacy-policy{
+    color: #414141;
+    font-size: 0.875rem;
+}
+
+@media only screen and (min-width:1600px){
+	.privacy-policy{
+	   margin-top: 20%;
+	}
+}
