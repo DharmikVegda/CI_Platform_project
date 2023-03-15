@@ -19,7 +19,7 @@
             </div>
             <div class="col-12 col-xl-4 mt-3 pb-5">
                 <div class="row forgot-form align-items-center">
-                    <form>
+                    <form action="forgotPasswordHandler" method="post">
                         <div class="d-flex justify-content-center">
                             <p id="hedding"> Forgot Password</p>
                         </div>
@@ -30,12 +30,12 @@
                         <!-- email address  -->
                         <div class="mb-3">
                             <label for="InputEmail" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="InputEmail"
+                            <input type="email" class="form-control" id="InputEmail" name="email"
                                 aria-describedby="emailHelp" placeholder="Enter your email address..">
                         </div>
                         <!-- reset password button -->
                         <button type="submit" class="btn rounded-pill w-100 btn-outline mb-3" id="reset-password-button">Reset my Password</button>
-                        <div class="mb-3 d-flex justify-content-center align-items-center"> <a href="#"
+                        <div class="mb-3 d-flex justify-content-center align-items-center"> <a href="login"
                                 id="login-text">Login</a> </div>
                     </form>
                 </div>

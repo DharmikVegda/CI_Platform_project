@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    
+<%@ page isELIgnored="false" %>    
     
 <!DOCTYPE html>
 <html lang="en">
@@ -22,25 +22,26 @@
                 <%@ include file="carousel.html" %>
             </div>
             <div class="col-12 col-xl-4 mt-3 pb-5">
+            	<div class="text-center text-white bg-danger h3"> ${msg } </div>
                 <div class="row login-form align-items-center">
-                    <form>
+                    <form action="loginhandler" method="post">
                         <!-- email address  -->
                         <div class="mb-3">
                             <label for="InputEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="InputEmail"
-                                aria-describedby="emailHelp">
+                                name="email" aria-describedby="emailHelp">
                         </div>
                         <!-- password  -->
                         <div class="mb-3">
                             <label for="InputPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="InputPassword">
+                            <input type="password" class="form-control" id="InputPassword" name="password">
                         </div>
                         <!-- login button  -->
                         <button type="submit" class="btn rounded-pill btn-outline mb-3" id="login-button">Login</button>
-                        <div class="mb-3 d-flex justify-content-center align-items-center"> <a href="#"
+                        <div class="mb-3 d-flex justify-content-center align-items-center"> <a href="forgot-password"
                                 id="lost-password-text">Lost your password?</a> </div>
                         <div class="d-flex justify-content-center align-items-center"> <span id="extra-text">Don't have an
-                                account?</span> <a href="#" id="create-account-text">Create an account</a> </div>
+                                account?</span> <a href="registration" id="create-account-text">Create an account</a> </div>
                     </form>
                 </div>
                 <!-- privacy policy text  -->

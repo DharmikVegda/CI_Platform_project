@@ -19,41 +19,41 @@
             </div>
             <div class="col-12 col-xl-4 mt-3">
                 <div class="row registration-form align-items-center">
-                    <form>
+                    <form action="registerHandler" method="post" onsubmit="return validatepass()">
                         <!-- first name -->
                         <div class="mb-3">
                             <label for="InputFirstName" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="InputFirstName"
-                                aria-describedby="firstname">
+                                name="firstname">
                         </div>
                         <!-- last name  -->
                         <div class="mb-3">
                             <label for="InputLastName" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="InputLastName"
-                                aria-describedby="lastname">
+                                name="lastname">
                         </div>
                         <!-- phone number  -->
                         <div class="mb-3">
                             <label for="InputPhoneNumber" class="form-label">Phone Number</label>
                             <input type="number" class="form-control" id="InputPhoneNumber"
-                                aria-describedby="phonenumber">
+                                name="phonenumber">
                         </div>
                         <!-- email address  -->
                         <div class="mb-3">
                             <label for="InputEmail" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="InputEmail"
-                                aria-describedby="emailHelp">
+                                name="email">
                         </div>
                         <!-- password  -->
                         <div class="mb-3">
                             <label for="InputPassword" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="InputPassword" value="1234567">
+                            <input type="password" class="form-control" id="Password" name="password">
                         </div>
                         <!-- conform password  -->
                         <div class="mb-3">
                             <label for="conformPassword" class="form-label">Conform New Password</label>
                             <input type="password" class="form-control" id="conformPassword"
-                                aria-describedby="PasswordHelp" placeholder="" value="1234567">
+                                placeholder="">
                         </div>
                         <!-- register button  -->
                         <button type="submit" class="btn rounded-pill mb-3" id="register-button">Register</button>
@@ -72,7 +72,18 @@
             </div>
         </div>
     </div>
+    <script src="resources/js/bootstrap.bundle.min.js"></script>
+    <script>
+    	function validatepass(){
+    		/* let pass = document.getElementById("password").value;
+        	let cpass = document.getElementById("conformpassword").value;
+        	console.log(pass);
+        	console.log(cpass); */
+        	alert("he");
+        	return false;
+    	}
+    	
+    </script>
 </body>
-<script src="recources/js/bootstrap.bundle.min.js"></script>
 
 </html>
